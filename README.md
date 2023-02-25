@@ -1,4 +1,5 @@
 # 项目简介
+参考视频：https://www.bilibili.com/video/BV1sf4y1L7KE/?p=1&vd_source=3f02a65309de4b7b18d2bb0199f1cf4d
 ## 1. 登录模块
 （1）手机号码参数校验：使用JSR303参数校验对参数LoginVo加注解@valid，例如使用@NotNull定义非空，同时使用ConstraintValidator接口自定义注解验证手机号码格式
 
