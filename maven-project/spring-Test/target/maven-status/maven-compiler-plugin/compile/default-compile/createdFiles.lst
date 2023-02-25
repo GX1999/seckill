@@ -1,0 +1,6 @@
+com\gx\service\BookService.class
+com\gx\service\BookServiceImpl.class
+com\gx\dao\BookDao.class
+com\gx\dao\BookDaoImpl.class
+com\gx\App.class
+com\gx\App2.class

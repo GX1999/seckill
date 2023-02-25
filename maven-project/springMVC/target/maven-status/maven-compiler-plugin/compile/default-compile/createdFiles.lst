@@ -1,0 +1,4 @@
+com\gx\config\SpringMvcConfig.class
+com\gx\domain\User.class
+com\gx\config\ServletContainerInitConfig.class
+com\gx\controller\UserController.class

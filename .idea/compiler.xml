@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seckill" />
+        <module name="springboot" />
+        <module name="mybatisplus" />
+        <module name="springboot_mybatis" />
+        <module name="generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="14">
+      <module name="generator" target="13" />
+      <module name="mybatisplus" target="13" />
+      <module name="seckill" target="13" />
+      <module name="springboot" target="13" />
+      <module name="springboot_mybatis" target="13" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="generator" options="-parameters" />
+      <module name="mybatisplus" options="-parameters" />
+      <module name="seckill" options="-parameters" />
+      <module name="springboot" options="-parameters" />
+      <module name="springboot_mybatis" options="-parameters" />
+    </option>
+  </component>
+</project>

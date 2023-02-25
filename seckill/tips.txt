@@ -1,0 +1,24 @@
+1. 申请root权限
+sudo su root
+
+2. jdk环境（图形界面下启动不加载/etx/profile文件）
+source /etc/profile
+
+3. 防火墙关闭
+systemctl stop firewalld
+
+4. redis开启
+cd /home/aaron/下载/local/redis/bin 
+./redis-server redis.conf
+
+5. mysql开启（root、xxxx密码为1234）
+windows：在服务中开启
+linux：好像自动开启。或者mysql
+
+6. 项目启动
+cd /home/aaron/下载
+(nohup) java -jar seckill-0.0.1-SNAPSHOT.jar   
+
+7. rabbitMQ
+启动：systemctl start rabbitmq-server.service
+访问：http://192.168.208.128:15672/    guest  guest
