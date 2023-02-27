@@ -3,7 +3,7 @@
 - 虚拟机：CentOS 7 64位
 - tomcat：8.5.84
 - 依赖管理工具：Maven-3.6.1 
-- 数据库：Mysql-8.0.31、Redis-5.0.5
+- 数据库：MySQL-8.0.31、Redis-5.0.5
 - RabbitMQ：3.8.5
 # 项目简介
 参考视频：https://www.bilibili.com/video/BV1sf4y1L7KE/?p=1&vd_source=3f02a65309de4b7b18d2bb0199f1cf4d
