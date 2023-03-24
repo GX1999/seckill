@@ -8,7 +8,7 @@
 # 项目简介
 参考视频：https://www.bilibili.com/video/BV1sf4y1L7KE/?p=1&vd_source=3f02a65309de4b7b18d2bb0199f1cf4d
 ## 1. 登录模块
-（1）手机号码参数校验：使用validation参数校验组件对参数LoginVo加注解@valid，例如使用@NotNull定义非空，同时使用IsMobileValidator自定义注解验证手机号码格式
+（1）手机号码参数校验：使用validation参数校验组件对参数LoginVo加注解@valid，在LoginVo中使用@NotNull定义非空、@Length定义长度和@Pattern定义正则表达式
 
 （2）密码两次MD5加密：第一次加密防止在网络传输过程中以明文形式被截取，第二次加密防止数据库信息泄露被反推解码（加密两次加大反推密码的难度）
 
