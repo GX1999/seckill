@@ -66,7 +66,7 @@
 
 （2）接口限流
 
-配合redis消亡时间设置每个用户在一定时间内最大可请求次数。使用redis的increment的原子操作，increment是向redis请求Increby命令，返回值是更新后的数据。
+配合redis消亡时间设置每个用户在一定时间内最大可请求次数。使用redis的increment的原子操作，increment是向redis请求Increby命令，返回值是更新后的数据。若不存在对应key时默认初始为0。
 
 （3）使用RabbitMQ削峰
 
