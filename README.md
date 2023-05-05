@@ -141,7 +141,7 @@
 ## 7. 秒杀的完整流程？
 （1）getPath获取秒杀地址：计数器法用户限流（increment判断）、验证码是否输入正确（与验证码初始化时存入redis中的对比）
 
-（2）doSecKill执行秒杀判断：内存标记判断（HashMap存放库存为0的商品）、redis中超买检查（redis中是否有用户id+商品id记录）、redis中超卖判断（decrement判断+如何stock<0则进行内存标记）、向MQ中发送消息（使用pojo对象Message，包含user和goodsID）
+（2）doSecKill执行秒杀判断：内存标记判断（HashMap存放库存为0的商品）、redis中超买检查（redis中是否有用户id+商品id记录）、redis中超卖判断（decrement判断+如何stock<0则进行内存标记）、向MQ中发送消息（使用pojo对象Message的JSON格式，包含user和goodsID）
 
 （3）执行真正数据库减库存下单操作：MQ接收消息、数据库生成订单+超买判断（订单表设置唯一索引）、数据库减库存+超卖判断（updata语句）
 
